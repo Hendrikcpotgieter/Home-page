@@ -1,0 +1,52 @@
+/* general styling */
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.clock {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+    box-sizing: border-box;
+    width: 92vw;
+    max-width: 800px;
+    height: 100%;
+    align-items: start;
+    background-color: #f33c0f;
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    overflow-wrap: break-word;
+    border-radius: 11%;
+
+    border: 1px solid #ddd;
+    border-radius: 7.5%;
+}
+
+div#countdown ul li {
+    padding: 10px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+div#countdown ul li span {
+    display: block;
+}
+
+@media screen and (max-width:350px) {
+    .clock {
+        display: none;
+    }
+
+    div#countdown ul li {
+        font-size: xx-small;
+        overflow-wrap: break-word;
+    }
+
+    div#countdown ul li span {
+        font-size: xx-small;
+        overflow-wrap: break-word;
+    }
+}

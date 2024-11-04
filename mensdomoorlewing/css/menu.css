@@ -1,0 +1,157 @@
+@font-face {
+    font-family: Orbitron-Medium;
+    src: url(./Orbitron-Medium.ttf);
+}
+
+*,
+header *,
+section *,
+div * {
+    font-family: Orbitron-Medium;
+    text-align: center;
+}
+
+header {
+    margin-top: 120px;
+}
+
+
+div.navbar {
+    z-index: 3;
+}
+
+li.logo img {
+    width: 40px;
+}
+
+.navbar li.logo,
+.navbar li.navbar_items {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar li a {
+    font-size: 1.05em;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.navbar li.navbar_items a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+.navbar li.icon {
+    display: none;
+}
+
+.div_navbar_items {
+    float: left;
+    padding-left: 1%;
+}
+
+@media screen and (max-width:875px) {
+    .navbar li.navbar_items {
+        display: none;
+    }
+
+    .navbar li.icon {
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 12px;
+    }
+}
+
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
+
+@media screen and (max-width:875px) {
+    li.logo {
+        width: 30px;
+    }
+
+    .navbar.responsive {
+        left: 0px;
+        top: 0px;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ae3704;
+        transition: background-color .6s;
+    }
+
+    .navbar.responsive li.logo img {
+        display: block;
+    }
+
+    .navbar.responsive .div_navbar_items {
+        float: none;
+        padding-right: 0;
+    }
+
+    .navbar.responsive li.navbar_items {
+        display: block;
+        padding: 50px;
+        font-size: 25px;
+    }
+
+    .navbar.responsive li.navbar_items a {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar.responsive li.navbar_items a:hover {
+        color: #17171e;
+        border-bottom-color: transparent;
+
+    }
+
+
+
+}
+
+@media screen and (max-width:350px) {
+    li.logo img {
+        width: 20px;
+    }
+
+    .navbar.responsive {
+
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #ae3704;
+        transition: background-color .6s;
+    }
+
+    .navbar.responsive li.logo img {
+        display: block;
+    }
+
+    .navbar.responsive .div_navbar_items {
+        float: none;
+        padding-right: 0;
+    }
+
+    .navbar.responsive li.navbar_items {
+        display: block;
+        padding: 0px;
+        font-size: xx-small;
+    }
+
+
+    .navbar.responsive li.navbar_items a {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+/* end of navgation bar styling - responsive */
+
+/* end of navgation bar styling - responsive https: https: //foolishdeveloper.com/navigation-bar-html-css-javascript/ 48*/
